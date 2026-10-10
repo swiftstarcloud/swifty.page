@@ -1,0 +1,9 @@
+{
+  "name": "swifty-page",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-10",
+  "assets": {"directory": "./dist", "binding": "ASSETS", "run_worker_first": true},
+  "build": {"command": "npm run build"}
+  // Add the actual D1 binding after creating your database:
+  // "d1_databases": [{"binding":"DB","database_name":"swifty-page-links","database_id":"<actual D1 UUID>","migrations_dir":"migrations"}]
+}

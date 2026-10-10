@@ -1,0 +1,17 @@
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('label','Label','text',1,1,'[]',1,0);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('url','URL','url',1,1,'[]',1,1);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('description','Description','text',0,1,'[]',1,2);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('symbol','Icon / symbol','text',0,1,'[]',1,3);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('group','Section','text',0,1,'[]',1,4);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('style','Display style','select',0,1,'["featured","row","creator","lover"]',1,5);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('adult','18+ badge','boolean',0,1,'[]',1,6);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('published','Published','boolean',0,1,'[]',1,7);
+INSERT OR IGNORE INTO fields (key,label,type,required,is_public,options_json,builtin,position) VALUES ('position','Sort order','number',0,1,'[]',1,8);
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('telegram','{"label":"Chat on Telegram","url":"https://t.me/noodboi","description":"Say hi · Feedback · Collaborations","symbol":"↗","group":"Let''s connect","style":"featured","adult":false,"published":true,"position":0}');
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('instagram','{"label":"Instagram","url":"https://www.instagram.com/dereknaked","description":"@dereknaked","symbol":"◎","group":"Follow along","style":"row","adult":false,"published":true,"position":1}');
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('bluesky','{"label":"Bluesky","url":"https://bsky.app/profile/noodboi.com","description":"@noodboi.com","symbol":"☁","group":"Follow along","style":"row","adult":false,"published":true,"position":2}');
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('x','{"label":"X / Twitter","url":"https://x.com/noodboi","description":"@noodboi","symbol":"𝕏","group":"Follow along","style":"row","adult":false,"published":true,"position":3}');
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('snapchat','{"label":"Snapchat","url":"https://www.snapchat.com/@dreckr","description":"@dreckr","symbol":"◌","group":"Follow along","style":"row","adult":false,"published":true,"position":4}');
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('jff','{"label":"JustFor.Fans","url":"https://linktr.ee/noodboi","description":"Find my page via Linktree","symbol":"Jf.","group":"More of me","style":"creator","adult":true,"published":true,"position":5}');
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('darkfans','{"label":"Darkfans","url":"https://darkfans.com/noodboi","description":"@noodboi","symbol":"df.","group":"More of me","style":"creator","adult":true,"published":true,"position":6}');
+INSERT OR IGNORE INTO links (id,values_json) VALUES ('kellhole','{"label":"My fiancé & lover","url":"https://kellhole.com","description":"kellhole.com","symbol":"♡","group":"People I love","style":"lover","adult":false,"published":true,"position":7}');
